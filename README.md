@@ -1,3 +1,14 @@
+# Git - Spanish translation team
+
+**Main branches:**
+
+- **`transifex`**: Only intended to help translators and track current translation state. It **must not** be based for PR to the main i10n team.
+
+- **`master`**: Git source code synchronized with the **master** branch of [git-l10n/git-po](https://github.com/git-l10n/git-po).
+
+
+----
+
 Git - fast, scalable, distributed revision control system
 =========================================================
 
