@@ -1,10 +1,52 @@
 # Git - Spanish translation team
 
-**Main branches:**
+## Description
+
+Spanish translation team for localization of Git project resources.
+
+### Main branches
 
 - **`transifex`**: Only intended to help translators and track current translation state. It **must not** be based for PR to the main i10n team.
 
 - **`master`**: Git source code synchronized with the **master** branch of [git-l10n/git-po](https://github.com/git-l10n/git-po).
+
+## Contributing
+
+### Requirements
+
+In addition to git compilation requirements, in order to translate you will need:
+
+- Join to the [Transifex project](https://transifex.com/projects/p/git-po) directly or [create a new issue asking to join](https://github.com/nelson6e65/git-po/issues/new?title=I%20would%20like%20to%20join%20to%20the%20translation%20team).
+- Install the [Transifex Client](https://docs.transifex.com/client/installing-the-client) and [set your credentials](https://docs.transifex.com/client/client-configuration#-transifexrc).
+
+### Translating
+
+You just need to use the Web interface use the intuitive Transifex platform in order to make your improvements.
+
+> **Note:** You can also manually update the .po files by :one: downloading the `"for_translation_*.po"` file from Transifex, :two: imprive it and :three: uploading this file again. **This is not recomended** because you can override by mistake other translator work.
+
+### Cheat Sheet
+
+Update local `po/es.po` file from Transifex:
+
+```
+$ tx pull -l es
+```
+
+Clean build:
+
+```
+$ git clean -xfd --exclude .transifexrc
+```
+
+Test:
+
+```
+$ make
+```
+
+
+> Note: If you need further info about transifex client, check [here]( https://docs.transifex.com/client/introduction).
 
 
 ----
