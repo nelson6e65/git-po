@@ -218,3 +218,6 @@
 *.pdb
 /Debug/
 /Release/
+
+# Transifex
+.transifexrc

@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+
+[git-po.git]
+file_filter = po/<lang>.po
+source_file = po/git.pot
+source_lang = en
+type = PO
