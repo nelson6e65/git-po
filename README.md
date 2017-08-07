@@ -33,17 +33,15 @@ You just need to use the Web interface use the intuitive Transifex platform in o
 $ tx pull -l es
 ```
 
-> **Warning:** After pull your changes, if there is new content in Transifex, the `po/es.po` file will be replaced. So, **you must set the charset to `UTF-8`** (`"Content-Type: text/plain; charset=UTF-8\n"`).
-
-
-> `"Content-Type: text/plain; charset=UTF-8\n"`
-
-
-**Clean build:**
+**Set the charset:**
 
 ```bash
-$ git clean -xfd --exclude .transifexrc
+# Sets the CHARSET to UTF-8:
+perl -pi -e 's/(?<="Content-Type: text\/plain; charset\=)CHARSET/UTF-8/' po/es.po
 ```
+
+> **Note:** Charset should be set before to run `make`.
+
 
 **Test:**
 
@@ -51,6 +49,12 @@ $ git clean -xfd --exclude .transifexrc
 $ make
 $ make install
 $ ~/bin/git status
+```
+
+**Clean build:**
+
+```bash
+$ git clean -Xfd --exclude .transifexrc
 ```
 
 
