@@ -33,11 +33,14 @@ You just need to use the Web interface use the intuitive Transifex platform in o
 $ tx pull -l es
 ```
 
-**Set the charset:**
+**Set the charset and replace default values:**
 
 ```bash
 # Sets the CHARSET to UTF-8:
 perl -pi -e 's/(?<="Content-Type: text\/plain; charset\=)CHARSET/UTF-8/' po/es.po
+
+# Sets PACKAGE VERSION to "Git"
+perl -pi -e 's/(?<="Project-Id-Version: )PACKAGE VERSION/Git/' po/es.po
 ```
 
 > **Note:** Charset should be set before to run `make`.
