@@ -21,7 +21,12 @@ In addition to git compilation requirements, in order to translate you will need
 
 ### Translating
 
-You just need to use the Web interface use the intuitive Transifex platform in order to make your improvements.
+You just need to use the Web interface use the intuitive Transifex platform in order to make your improvements:
+
+- Update the translation in Transifex.
+- Pull your changes: `po/transifex-pull.sh`.
+- Test: `make`.
+- And repeat
 
 > **Note:** You can also manually update the .po files by :one: downloading the `"for_translation_*.po"` file from Transifex, :two: imprive it and :three: uploading this file again. **This is not recomended** because you can override by mistake other translator work.
 
@@ -43,8 +48,9 @@ perl -pi -e 's/(?<="Content-Type: text\/plain; charset\=)CHARSET/UTF-8/' po/es.p
 perl -pi -e 's/(?<="Project-Id-Version: )PACKAGE VERSION/Git/' po/es.po
 ```
 
-> **Note:** Charset is mandatory to be set before to run `make`.
+> **Warning:** Charset is mandatory to be set before to run `make`.
 
+> **Note:** If you run **`po/transifex-pull.sh`**  this headers are set automatically.
 
 **Test:**
 
