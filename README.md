@@ -27,22 +27,30 @@ You just need to use the Web interface use the intuitive Transifex platform in o
 
 ### Cheat Sheet
 
-Update local `po/es.po` file from Transifex:
+**Update local `po/es.po` file from Transifex:**
 
 ```
 $ tx pull -l es
 ```
 
-Clean build:
+> **Warning:** After pull your changes, if there is new content in Transifex, the `po/es.po` file will be replaced. So, **you must set the charset to `UTF-8`** (`"Content-Type: text/plain; charset=UTF-8\n"`).
 
-```
+
+> `"Content-Type: text/plain; charset=UTF-8\n"`
+
+
+**Clean build:**
+
+```bash
 $ git clean -xfd --exclude .transifexrc
 ```
 
-Test:
+**Test:**
 
-```
+```bash
 $ make
+$ make install
+$ ~/bin/git status
 ```
 
 
