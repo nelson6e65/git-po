@@ -43,7 +43,7 @@ perl -pi -e 's/(?<="Content-Type: text\/plain; charset\=)CHARSET/UTF-8/' po/es.p
 perl -pi -e 's/(?<="Project-Id-Version: )PACKAGE VERSION/Git/' po/es.po
 ```
 
-> **Note:** Charset should be set before to run `make`.
+> **Note:** Charset is mandatory to be set before to run `make`.
 
 
 **Test:**
