@@ -1,5 +1,7 @@
 # Git - Spanish translation team
 
+[![Git translation stats (git.pot)](https://chart.googleapis.com/chart?chxt=y%2Cr&chd=e%3A..mZ&chco=B7E1FF%2CBFF7F2%2CF4F6FB&chbh=9&chs=350x40&cht=bhs&chxl=0%3A%7CSpanish%7CEnglish%7C1%3A%7C60%25%7C100%25%7C)](https://transifex.com/projects/p/git-po/resource/git/chart/image_png)
+
 ## Description
 
 Spanish translation team for localization of Git project resources.
