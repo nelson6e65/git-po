@@ -1,10 +1,14 @@
-# Git - Spanish translation team
-
-[![Git translation stats (git.pot)](https://chart.googleapis.com/chart?chxt=y%2Cr&chd=e%3A..mZ&chco=B7E1FF%2CBFF7F2%2CF4F6FB&chbh=9&chs=350x40&cht=bhs&chxl=0%3A%7CSpanish%7CEnglish%7C1%3A%7C60%25%7C100%25%7C)](https://transifex.com/projects/p/git-po/resource/git/chart/image_png)
+# Git - Transifex localization team
 
 ## Description
 
-Spanish translation team for localization of Git project resources.
+Tracking repo of localization Transifex team for Git project resources: https://transifex.com/projects/p/git-po
+
+### Status
+
+#### git.pot
+[![Git translation stats (git.pot)](https://chart.googleapis.com/chart?chxt=y%2Cr&chd=e%3A..mZ&chco=B7E1FF%2CBFF7F2%2CF4F6FB&chbh=9&chs=350x40&cht=bhs&chxl=0%3A%7CSpanish%7CEnglish%7C1%3A%7C60%25%7C100%25%7C)](https://transifex.com/projects/p/git-po/resource/git/chart/image_png)
+
 
 ### Main branches
 
@@ -23,14 +27,14 @@ In addition to git compilation requirements, in order to translate you will need
 
 ### Translating
 
-You just need to use the Web interface use the intuitive Transifex platform in order to make your improvements:
+You just need to use the intuitive Transifex platform in order to make your improvements:
 
 - Update the translation in Transifex.
 - Pull your changes: `po/transifex-pull.sh`.
 - Test: `make`.
 - And repeat
 
-> **Note:** You can also manually update the .po files by :one: downloading the `"for_translation_*.po"` file from Transifex, :two: imprive it and :three: uploading this file again. **This is not recomended** because you can override by mistake other translator work.
+> **Note:** You can also manually update the .po files by :one: downloading the `"for_translation_*.po"` file from Transifex, :two: improve it and :three: uploading this file again. **This is not recomended** because you can override by mistake other translator work.
 
 ### Cheat Sheet
 
